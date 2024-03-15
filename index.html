@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="header">
+            <div>
+                <img class="logo" src="img/logo.png" alt="">
+            </div>
+            <div class="row2">
+                <form id="buscar" action="" class="formulario">
+                    <input placeholder="Buscar..." type="text" class="busqueda">
+                    <button type="submit">
+                        <svg class="lupa" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                          </svg>
+
+                    </button>
+
+                    <div class="container-carrito">
+                        <div class="carrito-icono">
+                            <svg class="carrito" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                              </svg>
+                        </div>
+                          <div class="productos">
+                            <span id="contador-productos">0</span>
+                          </div>
+                          <div class="container-pcar cart">
+                            <div class="carrito-productos">
+                                <div class="productos-cart">
+                                    <div class="info-cart">
+                                        <p class="titulo-cart">Producto</p>
+                                        <span class="precio-producto">Precio</span>
+                                        <span class="cantidad-producto">Cantidad</span>
+                                        <div class="productos-carrito">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total-carrito">
+                                <h3>Total:</h3>
+                                <span class="total-pagar">$0</span>
+                            </div>
+                            <a href="#" class="vaciar-carrito">Vaciar carrito</a>
+                          </div>
+                    </div>
+                </form>
+            </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero">
+            <div class="container">
+                    <ul class="slider-contenedor">
+                        <li class="slider-sl">
+                            <img class="slider-img" src="img/hero.jpg" alt="">
+                        </li>
+                        <li class="slider-sl">
+                            <img class="slider-img"  src="img/hero2.jpg" alt="">
+                        </li>
+                        <li class="slider-sl">
+                            <img  class="slider-img" src="img/hero3.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contenido-hero">
+                <div class="novedades">
+                    <div class="novedad1">
+                        <h3 class="novedad-heading">Novedades editorial live</h3>
+                        <img class="novedad-imagen" src="img/estrella.svg" alt="">                     
+                    </div>
+                    <div class="novedad2">
+                        <h3 class="novedad-heading">Nuevos libros</h3>
+                        <img class="novedad-imagen" src="img/libro.svg" alt="">
+                    </div>
+                    <div class="novedad3">
+                        <h3 class="novedad-heading">Libros en ingles</h3>
+                        <svg class="novedad-imagen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                          </svg>
+                          
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+     <div id="libros">
+        <div class="container-libros">
+            <h1>Libreria</h1>
+        <a href="#" class="btnrecomendada">Ver todas las novedades</a>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img class="card-img" src="img/libro1.jpg" alt="">
+                <div class="info-card">
+                    <h4>Your Soul Is a River</h4>
+                    <p class="autor-card">Nikita Gill</p>
+                    <p class="precio">$15</p>
+                    <a href="#" data-id="1" class="boton-agregar">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="img/libro2.jpg" alt="">
+                <div class="info-card">
+                    <h4>Sculpture</h4>
+                    <p class="autor-card">Antiquity Taschen</p>
+                    <p class="precio">$11</p>
+                    <a href="#" data-id="2" class="boton-agregar">Agregar al carrito</a> 
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="img/libro3.jpg" alt="">
+                <div class="info-card">
+                    <h4>Milk and Honey</h4>
+                    <p class="autor-card">Rupi Kaur</p>
+                    <p class="precio">$10</p>
+                    <a href="#" data-id="3" class="boton-agregar">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="img/libro4.jpg" alt="">
+                <div class="info-card">
+                    <h4>All the letter i should have send</h4>
+                    <p class="autor-card">Rania Naim</p>
+                    <p class="precio">$36</p>
+                    <a href="#" data-id="4" class="boton-agregar">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="img/libro5.jpg" alt="">
+                <div class="info-card">
+                    <h4>Goal PLanner</h4>
+                    <p class="autor-card">Iki Glop</p>
+                    <p class="precio">$8</p>
+                    <a href="#" data-id="5" class="boton-agregar">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="img/libro6.jpg" alt="">
+                <div class="info-card">
+                    <h4>The two towers</h4>
+                    <p class="autor-card">J.R.R Tolkien</p>
+                    <p class="precio">$30</p>
+                    <a href="#" data-id="6" class="boton-agregar">Agregar al carrito</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container-autora">
+            <h2>NUESTRO AUTOR DEL MES: <span>Marta Sanz</span></h2>
+            <div class="autor">
+                <div class="img-autor">
+                    <img src="img/autora.jpg" alt="">
+                </div>
+                <div class="info-autora">
+                    <h2>Te presentamos a nuestra autora del mes</h2>
+                    <p>Sección especial para esta autora que te dejara encantado/a con sus obras.
+                        Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                    <div class="boton-autora">
+                        <a href="#" class="boton-autor">Ver todos los libros</a>
+                    <svg class="autora-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                      </svg>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categorias">
+        <div class="categorias-info">
+            <h3>Categorias Destacadas</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem necessitatibus officiis saepe, architecto aliquid nesciunt reiciendis cum pariatur, fugit possimus consequuntur? Cupiditate soluta officia repellendus in eligendi impedit minima! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam labore consectetur ut enim, porro, aspernatur, similique placeat distinctio repellat tempore inventore assumenda. Delectus vel, sunt voluptatibus nihil porro consequuntur in?</p>
+    
+        </div>
+    
+        <div class="libros-destacados">
+            <div class="categoria">
+                    <img src="img/juvenil.jpg" alt="" class="categoria-img">
+                <div class="info-categoria">
+                    <p>Libros Juveniles</p>
+                </div>
+            </div>
+    
+            <div class="categoria">
+                <img src="img/academicos.jpg" alt="" class="categoria-img">
+                <div class="info-categoria">
+                    <p>Libros Académicos</p>
+                </div>
+            </div>
+    
+            <div class="categoria">
+                <img src="img/infatiles.jpg" alt="" class="categoria-img">
+                <div class="info-categoria">
+                    <p>Libros Infantiles</p>
+                </div>
+            </div>
+    
+            <div class="categoria">
+                <img src="img/terror.jpg" alt="" class="categoria-img">
+                <div class="info-categoria">
+                    <p>Terror y suspenso</p>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    <section class="suscribete">
+        <div class="sub-contenido">
+            <h3 class="heading-sub">La mejor libreria virtual que puedes encontrar</h3>
+            <p>En la libreria ... puedes encontrar libros unicos y orginales de los mas clasicos a los mas nuevos, no solo esto sino encontraras de todos los generos y categorias que desees. Estamos aliados a numerosas editoriales que nos dieron su confianza de poder vender sus libros. Puedes comprar libros en todo el Colombia y Latinoamerica, pronto llegaremos a todo el mundo, gracias por confiar en nosotros. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore est numquam tempore, aspernatur hic asperiores recusandae ipsum omnis, tempora tenetur fugit, labore nobis? Explicabo quaerat hic sint error modi.</p>
+        </div>
+        <div class="librosfav">
+            <H3 class="heading-s">Compra tus libros favoritas desde la comodidad de tu casa</H3>
+            <div class="suscripcion">
+                <h3 class="heading-suscribete">Suscríbete en nuestra página y enterate de nuestras nuevas adquisiciones y llevate grandes descuentos </h3>
+                <div class="boton-sub">
+                    <a href="#" class="boton-subs">Ver todos los libros</a>
+                <svg class="autora-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                </div>   
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <footer class="footer">
+            <div class="columnas">
+                <div class="libreria">
+                    <h2>CONTACTANOS</h2>
+                    <p>Cll 169 #48-35, teusaquillo</p>
+                    <h2>TELEFONOS</h2>
+                    <p>3106731556</p>
+                    <h2>HORARIOS</h2>
+                    <p>Lunes a jueves: 7:00 a.m. a 6:00 p.m.</p>
+                    <p>Viernes: 7:00 a.m. a 5:00 p.m.</p>
+                    <p>Sábados: 9:00 a.m. a 12:00 p.m.</p>
+                </div>
+                <div class="tiendas">
+                    <h2>TIENDA</h2>
+                    <p>Nuestro perfil</p>
+                    <p>Quienes somos?</p>
+                    <p>Preguntas freguentes</p>
+                    <p>Tarjetas de regalo</p>
+                    <div class="imagenes-tienda">
+                        <img src="img/tik-tok.png" alt="" class="img-tienda">
+                        <img src="img/instagram.png" alt="" class="img-tienda">
+                        <img src="img/whatsapp.png" alt="" class="img-tienda">
+                    </div>
+                </div>
+                <div class="metodospago">
+                    <h2>METODOS DE PAGO</h2>
+                    <p>Pagos seguros en nuestra plataforma.</p>
+                    <img src="img/pagos.png" alt="" class="pagos">
+                </div>
+            </div>
+            <a href="#" class="copyright">Todos los derechos reservados. | Libreria |</a>
+    </footer>
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+    
+</body>
+</html>
