@@ -33,8 +33,16 @@ function eventos() {
 
     carrito.addEventListener('click', eliminarLibro);
 
-    vaciarCarrito.addEventListener('click', vaciarCarro)
+    document.addEventListener('DOMContentLoaded', () => {
+        articulosLibros = JSON.parse(localStorage.getItem('carrito')) || [];
+
+        mostrarProductos();
+    })
+
+    vaciarCarrito.addEventListener('click', vaciarCarro);
+
 }
+
 
 function agregarProducto(e) {
     e.preventDefault();
@@ -58,10 +66,9 @@ function eliminarLibro(e) {
 function vaciarCarro(e) {
     articulosLibros = [];
 
-    limpiarHTML();
+    limpiarCarrito();
     mostrarProductos();
 }
-
 
 function Datoslibro(libro) {
 
@@ -86,12 +93,11 @@ if(existe) {
     articulosLibros = [...articulosLibros, contenidoLibro];
 }
 
-    mostrarProductos();
+mostrarProductos();
 }
 
-
 function mostrarProductos() {
-    limpiarHTML();
+    limpiarCarrito();
 
     let total = 0;
     let cantidadProductos = 0;
@@ -110,19 +116,26 @@ function mostrarProductos() {
         `
 
         productoInfo.appendChild(contenido);
-
         total = total + parseInt(libro.cantidad * libro.precio.slice(1));
         cantidadProductos = cantidadProductos + libro.cantidad;
+
     });
     totalproductos.innerText = `$${total}`
     contador.innerText = cantidadProductos;
 
+    sincronizarStorage();
+
 }
 
+function sincronizarStorage(){
+    localStorage.setItem('carrito', JSON.stringify(articulosLibros))
+}
 
-function limpiarHTML() {
-    const elementosCarrito = productoInfo.querySelectorAll('.productos-carrito');
+function limpiarCarrito() {
+    const elementosCarrito = document.querySelectorAll('.productos-carrito');
     elementosCarrito.forEach(elemento => elemento.remove());
 }
+
+
 
 

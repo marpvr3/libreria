@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/resgistro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+        <div class="registro">
+            <div class="principal">
+                <div class="sub">¡Suscribete!</div>
+                <p class="texto-sub">Registra tus datos en nuestra página y enterate de todas las nuevas novedad y ofertas unicas de nuestra libreria.</p>
+            </div>
+
+            <form class="registroform" id="formulario" action="">
+                <h2>Registrarse</h2>
+                <div class="campoRegistro">
+                    <div class="campos">
+                        <label for="nombre" class="categorias">Nombre:</label>
+                    <input id="nombre" placeholder="Nombre(s)" type="text">
+                      <svg class="incorrecto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                      </svg>
+                      
+                      
+                    
+                    </div>
+
+                    <div class="campos">
+                        <label for="apellido" class="categorias">Apellido:</label>
+                        <input  id="Apellido" placeholder="Apellido(s)" type="text">
+                          <svg class="incorrecto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                          </svg>
+                          
+                          
+                    </div>
+                    <div class="campos">
+                        <label for="email" class="categorias">Email:</label>
+                        <input  id="email" placeholder="nombre@correo.com" type="email"> 
+                          <svg class="incorrecto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                          </svg>
+                          
+                        
+                    </div>
+                    <div class="campos">
+                        <label for="telefono" class="categorias">Telefono:</label>
+                        <input  id="telefono" placeholder="Celular" type="tel">
+                          <svg class="incorrecto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                          </svg>
+                          
+                          
+                          
+                    </div>
+                    <div class="campos">
+                        <label for="contraseña" class="categorias">Contraseña:</label>
+                        <input id="Contraseña" placeholder="Contraseña" type="password">
+                          <svg class="incorrecto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                          </svg>
+                          
+                          
+                    </div>
+                    <div class="campos">
+                        <label for="contraseñaCON" class="categorias">Confirmar Contraseña:</label>
+                        <input  id="ContraseñaCON" placeholder="Confirmar Contraseña" type="password">
+                          <svg class="incorrecto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                          </svg>
+                          
+                    </div>
+                </div>
+                    
+                <div class="politica-privacidad">
+                    <label for=""><input id="politicas" type="checkbox">Acepto políticas de privacidad y manejo de datos.</label>
+                </div>
+                
+                <button href="#" class="fondo registrarme">Registrarme</button>
+            </form>
+
+            <div id="sppiner" class="sppinerno">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                  </div>
+            </div>
+
+        </div>
+
+
+        <script src="js/registro.js"></script>
+</body>
+</html>
+

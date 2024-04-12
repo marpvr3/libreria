@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -60,17 +60,17 @@
     <section class="hero">
         <div class="hero">
             <div class="container">
-                    <ul class="slider-contenedor">
-                        <li class="slider-sl">
+                    <div class="slider-contenedor">
+                        <div class="slider-sl">
                             <img class="slider-img" src="img/hero.jpg" alt="">
-                        </li>
-                        <li class="slider-sl">
+                        </div>
+                        <div class="slider-sl">
                             <img class="slider-img"  src="img/hero2.jpg" alt="">
-                        </li>
-                        <li class="slider-sl">
+                        </div>
+                        <div class="slider-sl">
                             <img  class="slider-img" src="img/hero3.jpg" alt="">
-                        </li>
-                    </ul>
+                        </div>
+                        </div>
                 </div>
             </div>
 
@@ -102,70 +102,90 @@
      <div id="libros">
         <div class="container-libros">
             <h1>Libreria</h1>
-        <a href="#" class="btnrecomendada">Ver todas las novedades</a>
+        <div class="categorias-filtros">
+            <div class="filtrar">
+                <div class="titulo-categorias">Filtrar</div>
+            <svg class="img-filtro" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+              </svg>
+            </div>
+            
+            <div class="contenido-categorias">
+                <div class="categorias-columnas">
+                    <div class="columnas-categorias">
+                        <div class="columna-filtrado">
+                            <h3 class="titulo-filtrar">Filtrar Libros</h3>
+                            <svg class="close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                              </svg>
+                        </div>
+                        <div class="titulo-icono1">
+                            <h3>Categorias</h3>
+                        <svg class="abajo" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                          </svg>
+                        </div>
+                        <ul id="categoria">
+                            <li id="categoria1">Ficción</li>
+                            <li id="categoria2">Romance</li>
+                            <li id="categoria3">Historia</li>
+                            <li id="categoria4">Clasicos</li>
+                            <li id="categoria5">Infantiles</li>
+                        </ul>
+                    </div>
+                    <div class="columnas-categorias">
+                        <div class="titulo-icono2">
+                            <h3>Idiomas</h3>
+                        <svg class="abajo" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                          </svg>
+                        </div>
+                          
+                        <ul id="idioma">
+                            <li id="español">Español</li>
+                            <li id="ingles">Ingles</li>
+                        </ul>
+                    </div>
+                    <div class="columnas-categorias">
+                        <div class="titulo-icono3">
+                            <h3>Precios</h3>
+                        <svg class="abajo" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                          </svg>
+                        </div>
+                          
+                        <ul  id="Precio"> 
+                            <li value="1" id="precio1">$0-$10</li>
+                            <li value="2" id="precio2">$10-$20</li>
+                            <li value="3" id="precio3">$20-$30</li>
+                            <li value="4" id="precio4">$30-$40</li>
+                            <li value="5" id="precio5">$40-$55</li>
+                        </ul>
+                    </div>
+                    <div class="columnas-categorias">
+                        <div class="titulo-icono4">
+                            <h3>Año de Publicación</h3>
+                        <svg class="abajo" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                          </svg>
+                        </div>                        
+                        <ul  id="Año">
+                            <li value="2024" id="categoria6">2024</li>
+                            <li value="2023" id="categoria7">2023</li>
+                            <li value="2022" id="categoria8">2022</li>
+                            <li value="2021" id="categoria9">2021</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
         </div>
-        <div class="cards">
-            <div class="card">
-                <img class="card-img" src="img/libro1.jpg" alt="">
-                <div class="info-card">
-                    <h4>Your Soul Is a River</h4>
-                    <p class="autor-card">Nikita Gill</p>
-                    <p class="precio">$15</p>
-                    <a href="#" data-id="1" class="boton-agregar">Agregar al carrito</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="img/libro2.jpg" alt="">
-                <div class="info-card">
-                    <h4>Sculpture</h4>
-                    <p class="autor-card">Antiquity Taschen</p>
-                    <p class="precio">$11</p>
-                    <a href="#" data-id="2" class="boton-agregar">Agregar al carrito</a> 
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="img/libro3.jpg" alt="">
-                <div class="info-card">
-                    <h4>Milk and Honey</h4>
-                    <p class="autor-card">Rupi Kaur</p>
-                    <p class="precio">$10</p>
-                    <a href="#" data-id="3" class="boton-agregar">Agregar al carrito</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="img/libro4.jpg" alt="">
-                <div class="info-card">
-                    <h4>All the letter i should have send</h4>
-                    <p class="autor-card">Rania Naim</p>
-                    <p class="precio">$36</p>
-                    <a href="#" data-id="4" class="boton-agregar">Agregar al carrito</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="img/libro5.jpg" alt="">
-                <div class="info-card">
-                    <h4>Goal PLanner</h4>
-                    <p class="autor-card">Iki Glop</p>
-                    <p class="precio">$8</p>
-                    <a href="#" data-id="5" class="boton-agregar">Agregar al carrito</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="img/libro6.jpg" alt="">
-                <div class="info-card">
-                    <h4>The two towers</h4>
-                    <p class="autor-card">J.R.R Tolkien</p>
-                    <p class="precio">$30</p>
-                    <a href="#" data-id="6" class="boton-agregar">Agregar al carrito</a>
-                </div>
-                </div>
-            </div>
         </div>
+
+        <div class="cards-libros" id="libros-filtrados">
+            
+        </div>
+
     </div>
 
     <section>
@@ -242,7 +262,7 @@
             <div class="suscripcion">
                 <h3 class="heading-suscribete">Suscríbete en nuestra página y enterate de nuestras nuevas adquisiciones y llevate grandes descuentos </h3>
                 <div class="boton-sub">
-                    <a href="#" class="boton-subs">Ver todos los libros</a>
+                    <a href="suscribete.html" class="boton-subs">suscribete</a>
                 <svg class="autora-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                   </svg>
@@ -252,9 +272,6 @@
         </div>
 
     </section>
-
-
-
 
 
     <footer class="footer">
@@ -295,6 +312,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/filtrar.js"></script>
+    <script src="js/lista.js"></script>
 
 
     

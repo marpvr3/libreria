@@ -1,0 +1,236 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway";
+  }
+
+body{
+    background-color: #f6d7bf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60rem;
+    min-height: 100vh; 
+}
+
+.registro{
+    width: 600px;
+    background: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .2);
+    margin: 0 10px;
+}
+
+.principal{
+    width: 100%;
+    background: linear-gradient(to right, #ffba85, #fba479, #c85e37);
+    height: 250px;
+    padding: 40px;
+    text-align: center;
+}
+
+.sub{
+    font-size: 50px;
+    font-weight: 200;
+    color: #fff;
+
+}
+
+.texto-sub{
+    color: #fff;
+}
+
+.registroform{
+   margin-bottom: 20px;
+    background-color: rgb(255, 255, 255, .2);
+    backdrop-filter: blur(30px);
+    margin-top: -80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .2);
+}
+
+.registroform h2{
+    font-weight: 200;
+    font-size: 38px;
+    text-align: center;
+    color: #4f4444;
+
+}
+
+
+.campoRegistro{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px 0;
+}
+
+@media (max-width: 670px) {
+    .campoRegistro{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.campos input .visible{
+    border: 2px solid rgba(208, 196, 196, 0.953);
+}
+
+.campos{
+    position: relative;
+}
+
+.campos input{
+    width: 95%;
+    background-color: rgba(232, 125, 10, 0.2);
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #300e00;
+}
+
+
+.campos label{
+    font-weight: 400;
+    color: #300e00;
+ }
+ 
+ .campos input::placeholder{
+     color: #300e00a8;
+ }
+
+
+
+ .politica-privacidad{
+     font-size: 14px;
+     margin: 15px 0;
+ }
+ .politica-privacidad input{
+     margin-right: 5px;
+ }
+ 
+ .politica-privacidad label input{
+     accent-color: #c85e37;
+ }
+ 
+ .registrarme{
+     padding: 15px;
+     width: 100%;
+     text-align: center;
+     text-decoration: none;
+     border-radius: 5px;
+     color: #ffffff;
+     cursor: no-drop;
+     box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+     font-weight: 600;
+     margin-bottom: 20px;
+     outline: none;
+     border: none;
+ 
+ }
+
+ .fondo{
+    background: linear-gradient(to right, rgba(255, 186, 133, 0.6), rgba(251, 164, 121, 0.6), rgba(200, 94, 55, 0.6));
+ }
+
+
+ /*validar o error campos*/
+
+
+ .campo-incorrecto{
+    font-size: 12.5px;
+    color: #50443F;
+    font-weight: 600;
+    padding: 2px;
+    margin-bottom: 5px;
+ }
+
+ .campos input.i-incorrecto {
+    border: 2px solid #bf3100;
+}
+
+
+.incorrecto{
+    visibility: hidden;
+    width: 28px;
+    height: auto;
+    position: absolute;
+    display: inline-block;
+    right: 25px; 
+    top: 42%; 
+    transform: translateY(-50%);
+}
+
+.incorrecto{
+    color: #bf3100;
+}
+
+.activar{
+    background: linear-gradient(to right, #ffba85, #fba479, #c85e37);
+    cursor: pointer;
+
+}
+
+.registro-valido{
+    box-shadow: 0 0 10px rgb(0, 0, 0, .5);
+    padding: 5px;
+    background: rgba(129, 192, 14, 0.434);
+    border: none;
+    color: #265200;
+    text-align: center;
+    font-size: 13.8px;
+}
+
+/*sppiner estilos*/
+.sppinerno{
+    display: none;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  margin: 10px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fba479;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
